@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kebabsavar31 Güncelleme</title>
+    <style>
+        /* Arka plan video stilleri */
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Videoyu içeriklerin arkasına yerleştir */
+        }
+    </style>
+</head>
+<body>
+    <!-- Arka Plan Video -->
+    <video class="background-video" autoplay loop muted>
+        <source src="https://cdn.discordapp.com/attachments/1338244301829705769/1341107823039217744/yongli_sword_ghost_of_tsushima_4k_live_wallpaper.mp4?ex=67b4cb7d&is=67b379fd&hm=bddc1aebc74050e7f575a8c01e5e05b9dd6d5b4b25c5a65a8419b51a01fc299d&" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Admin Giriş Formu -->
+    <div id="loginContainer">
+        <h1>kebabsavar31 Admin Girişi</h1>
+        <form id="loginForm" onsubmit="return checkLogin(event)">
+            <label for="username">Kullanıcı Adı:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Şifre:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Giriş Yap</button>
+        </form>
+        <p id="loginError" style="color: red; display: none;">Kullanıcı adı veya şifre yanlış!</p>
+    </div>
+
+    <!-- Admin Paneli - Güncelleme Formu -->
+    <div id="updateContainer" style="display: none;">
+        <h1>Kebabsavar31 Güncelleme</h1>
+        <form id="productForm">
+            <label for="productName">Güncelleme Başlığı:</label>
+            <input type="text" id="productName" name="productName" required>
+            <br>
+            <label for="productDescription">Açıklama:</label>
+            <textarea id="productDescription" name="productDescription" cols="50" rows="10" required></textarea>
+            <br>
+            <label for="productImage">Güncelleme Resmi (Dosya Seçin):</label>
+            <input type="file" id="productImage" name="productImage" accept="image/*" required>
+            <br>
+            <label for="productVideo">Güncelleme Videosu (MP4, WebM):</label>
+            <input type="file" id="productVideo" name="productVideo" accept="video/mp4,video/webm">
+            <br>
+            <button type="button" onclick="sendWebhook()">Kanala Gönder</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

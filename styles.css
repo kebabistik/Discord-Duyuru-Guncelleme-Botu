@@ -1,0 +1,121 @@
+/* Genel body stilleri */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    cursor: url('https://example.com/path/to/custom-cursor.png'), auto; /* Özel imleç resmi */
+}
+
+/* Video arka plan */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Videoyu ekrana yaymak için */
+    z-index: -1; /* İçeriğin video üstünde görünmesini sağlamak için */
+}
+
+/* İçerik kutusunun tasarımı */
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Şeffaf siyah arka plan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(7, 54, 156);
+    color: #1888b4; /* Yazı rengi mavi */
+    text-align: center; /* Yazıları ortala */
+    z-index: 1; /* İçeriği video önünde göstermek için */
+}
+
+/* Başlık stilleri */
+h1 {
+    color: #1285a8; /* Başlık rengi mavi */
+}
+
+/* Admin giriş formu */
+#loginContainer {
+    background-color: rgba(0, 0, 0, 0.7); /* Admin giriş arka planı */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(132, 212, 112);
+    color: #8adb76;
+    text-align: center;
+    z-index: 1; /* İçeriği video önünde göstermek için */
+    width: 300px; /* Formun genişliği */
+}
+
+/* Hata mesajı */
+#loginError {
+    color: red;
+    font-size: 14px;
+    display: none; /* Başlangıçta gizli */
+}
+
+/* Admin giriş başlık */
+#loginContainer h1 {
+    color: #a2ca60; /* Başlık rengi mavi */
+}
+
+/* Form elementleri */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #c6d37a; /* Etiket rengi mavi */
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #d1ac5c;
+    border-radius: 5px;
+    background-color: #333; /* Giriş alanlarının arka planı */
+    color: #fff; /* Giriş alanı yazı rengi */
+}
+
+button {
+    background-color: hsl(197, 59%, 70%);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Buton üzerinde imleci parmak işaretine dönüştürür */
+}
+
+button:hover {
+    background-color: #ac1313; /* Buton hover rengi */
+}
+
+/* Güncelleme formu için stiller */
+#updateContainer {
+    display: none; /* Başlangıçta gizli */
+}
+
+/* Giriş formu ve güncelleme formu arasında geçiş yapmak için */
+#updateContainer {
+    background-color: rgba(0, 0, 0, 0.7); /* Admin paneli arka planı */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(171, 201, 123);
+    color: #1888b4;
+    text-align: center;
+    width: 400px; /* Form genişliği */
+}
+
+/* Video yüklendiğinde güncellenmiş stil */
+input[type="file"] {
+    color: #bedb79; /* Dosya seçici buton yazı rengi */
+    border: 1px solid #a4df95;
+    background-color: #333; /* Dosya seçici buton arka planı */
+    padding: 10px;
+}
