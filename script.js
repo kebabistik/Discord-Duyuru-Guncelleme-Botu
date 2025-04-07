@@ -51,7 +51,7 @@ async function sendWebhook() {
                     url: 'https://cdn.discordapp.com/attachments/1283104142495322123/1283116353624211468/baba3.jpg?ex=67f0bef9&is=67ef6d79&hm=e78da81640389da5fc5eb8382a0b6aca3c92b0b8d01e8468dc58870ff988121a&'
                 },
                 author: {
-                    name: 'Gökdoğan Bilişim',
+                    name: 'kebabsavar31',
                     icon_url: 'https://cdn.discordapp.com/attachments/1283104142495322123/1283116353624211468/baba3.jpg?ex=67f0bef9&is=67ef6d79&hm=e78da81640389da5fc5eb8382a0b6aca3c92b0b8d01e8468dc58870ff988121a&'
                 }
             }
