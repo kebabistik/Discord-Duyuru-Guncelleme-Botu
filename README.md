@@ -1,4 +1,6 @@
 # Discord-Duyuru-Guncelleme-Botu
+# Kurulum Videosu: https://youtu.be/VEuKCIRRKxU
+
 Discord ta otomatik kullanıcı adı ve şifre ile giriş yaparak, bağladığınız wehbooka otomatik mesaj attırabilirsiniz :)
 
 ![image](https://github.com/user-attachments/assets/539a4d07-08a9-4472-932d-4cd23b7817f6)
