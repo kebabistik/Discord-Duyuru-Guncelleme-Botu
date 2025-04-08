@@ -31,7 +31,7 @@ async function sendWebhook() {
     const productDescription = document.getElementById('productDescription').value;
     const productImage = document.getElementById('productImage').files[0]; // Resim dosyası
     const productVideo = document.getElementById('productVideo').files[0]; // Video dosyası
-    const webhookURL = 'https://discord.com/api/webhooks/1357653799035998410/UZX8Jm9Ws3JrvSyRoXsOq_x6yXcGXY1ajvx-aWy2W6gBoMnX5GpZIR5VKWaMwJQWTlJl';
+    const webhookURL = 'Buraya Weebohk girilecek';
 
     let contentMessage = "@everyone @here 📢 **Yeni Güncelleme Yayında! Kebabsavar31 firma** 🚀";
 
